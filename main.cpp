@@ -12,17 +12,14 @@ int main(int argc, char* argv[]) {
 
         vector<string> names;
 
-        // Store arguments
         for (int i = 1; i < argc; i++) {
             names.push_back(argv[i]);
         }
 
-        // Enhanced for loop + add comma
         for (string name : names) {
             result += name + ", ";
         }
 
-        // Remove last ", " using substring
         result = result.substr(0, result.length() - 2);
 
         cout << result << endl;
